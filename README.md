@@ -35,6 +35,7 @@ El esquema Entidad–Relación (ER) de Filmática está diseñado para represent
 - staff: Detalla la información del personal del negocio, incluyendo los nombres y roles. También interactúa con la tabla payment para registrar quién procesó los pagos de los clientes.
 - payment: Registra los pagos realizados por los clientes por los alquileres. Está directamente relacionado con customer, rental, y staff, reflejando los datos del cliente, el alquiler realizado y el empleado que gestionó la transacción.
 - Store: Registra los datos de las tiendas en propiedad de Filmática incluye datos sobre su dirección y el personal que trabaja en cada tienda.
+
 **Relaciones entre tablas**
 - La tabla film está en el centro del sistema, vinculándose con inventory (que gestiona el stock de copias disponibles) y con rental (que contiene el historial de alquileres). Además se relaciona directamente o a través de tablas intermedias con la tabla actor (incluye los nombre y apellidos de los actores que participan en las películas que hay en tienda), category (incluye las categorías de las películas) y language (que gestiona los lenguajes de las películas)
 - Customer está relacionado con rental y payment, indicando qué cliente alquiló qué película y cómo se realizó el pago correspondiente.

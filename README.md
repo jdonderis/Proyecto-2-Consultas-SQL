@@ -18,6 +18,7 @@ Antes de comenzar, asegúrate de que los siguientes requisitos se cumplen:
 - Acceso a un gestor de base de datos, preferiblemente DBeaver ya que ha sido el gestor de base de datos utilizado en este proyecto.
 - La base de datos de la tienda de alquiler de películas debe estar descargada y configurada en el gestor de base de datos. La base de datos la encontrarás en la carpeta 
 “Data” en este mismo directorio.
+
 **Ejecución de las consultas:**  
 Para ejecutar las consultas, sigue estos pasos:
 1.Asegúrate de que la base de datos de PostgreSQL esté en ejecución.
@@ -27,6 +28,7 @@ Para ejecutar las consultas, sigue estos pasos:
   
 ##📈Estructura de la Base de Datos
 El esquema Entidad–Relación (ER) de Filmática está diseñado para representar de manera clara cómo interactúan las diferentes entidades dentro de la base de datos de la tienda. 
+
 **Tablas principales del esquema ER sobre las que impacta nuestro estudio:**
 - film: Esta tabla contiene la información básica de las películas, como el título, descripción, duración, o categoría, entre otros detalles. Se relaciona con otras tablas mediante claves foráneas para vincular las películas con su  inventario, categorías, alquileres o actores. 
 - customer: En esta tabla se registran los datos de los clientes, incluyendo su nombre, dirección, correo electrónico y estado de actividad. Los clientes están relacionados con la tabla “rental”, que maneja los alquileres realizados, y con “payment”, en la que se detallan los registros de pagos.
